@@ -8,7 +8,7 @@ type StoreItemProps = {
   name: string;
   price: number;
   imgUrl: string;
-}
+};
 
 export const StoreItem = ({ id, name, price, imgUrl }: StoreItemProps) => {
   const {
@@ -25,7 +25,7 @@ export const StoreItem = ({ id, name, price, imgUrl }: StoreItemProps) => {
       <Card.Img
         variant="top"
         src={imgUrl}
-        height="350px"
+        height="250px"
         style={{ objectFit: "cover" }}
       />
       <Card.Body className="d-flex flex-column">
