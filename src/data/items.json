@@ -3,24 +3,24 @@
     "id": 1,
     "name": "Alocasia 'Dragon Scale'",
     "price": 10.99,
-    "imgUrl": "/imgs/book.jpg"
+    "imgUrl": "/imgs/alocasia.jpg"
   },
   {
     "id": 2,
     "name": "Monstera 'Thai Constellation'",
     "price": 1199,
-    "imgUrl": "/imgs/computer.jpg"
+    "imgUrl": "/imgs/monstera_thai.jpg"
   },
   {
     "id": 3,
     "name": "Philodendron 'Birkin'",
     "price": 45.55,
-    "imgUrl": "/imgs/banana.jpg"
+    "imgUrl": "/imgs/ph_birkin.jpg"
   },
   {
     "id": 4,
     "name": "Philodendron 'Dean McDowell'",
     "price": 1400,
-    "imgUrl": "/imgs/car.jpg"
+    "imgUrl": "/imgs/ph_dean.jpg"
   }
 ]
