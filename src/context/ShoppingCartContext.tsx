@@ -13,12 +13,14 @@ type ShoppingCartContext = {
   increaseCartQuantity: (id: number) => void;
   decreaseCartQuantity: (id: number) => void;
   removeFromCart: (id: number) => void;
+  cartItems: CartItem[];
+  // cartQuantity: number;
 };
 
 const ShoppingCartContext = createContext({} as ShoppingCartContext);
 
 export const useShoppingCart = () => {
-  useContext(ShoppingCartContext);
+  return useContext(ShoppingCartContext);
 };
 
 export const ShoppingCardProvider = ({
@@ -31,11 +33,11 @@ export const ShoppingCardProvider = ({
   };
 
   const increaseCartQuantity = (id: number) => {
-    setCartItems((currentItems) => {
-      if (currentItems.find((item) => item.id === id) == null) {
-        return [...currentItems, { id, quantity: 1 }];
+    setCartItems((currItems) => {
+      if (currItems.find((item) => item.id === id) == null) {
+        return [...currItems, { id, quantity: 1 }];
       } else {
-        return currentItems.map((item) => {
+        return currItems.map((item) => {
           if (item.id === id) {
             return { ...item, quantity: item.quantity + 1 };
           } else {
@@ -75,6 +77,7 @@ export const ShoppingCardProvider = ({
         increaseCartQuantity,
         decreaseCartQuantity,
         removeFromCart,
+        cartItems,
       }}
     >
       {children}
