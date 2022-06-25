@@ -1,7 +1,14 @@
+import { Routes, Route } from "react-router-dom";
+import { Container } from "react-bootstrap";
+
 export const App = () => {
   return (
-    <div>
-      <h1>Hi!</h1>
-    </div>
+    <Container>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/store" element={<StorePage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
+    </Container>
   );
 };
