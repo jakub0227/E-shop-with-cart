@@ -26,11 +26,11 @@ const routes: Route[] = [
 export const Navigation = () => {
   const { openCart, cartQuantity } = useShoppingCart();
   return (
-    <Navbar sticky="top" className="bg=white shadow-lg mb-3">
+    <Navbar sticky="top" className="bg-white shadow-lg mb-3">
       <Container>
         <Nav className="me-auto">
           {routes.map((el, i) => (
-            <Nav.Link key={i} to={el.url} as={NavLink}>
+            <Nav.Link className="h6" key={i} to={el.url} as={NavLink}>
               {el.name}
             </Nav.Link>
           ))}
