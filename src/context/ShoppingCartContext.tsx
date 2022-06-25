@@ -95,7 +95,7 @@ export const ShoppingCardProvider = ({
       }}
     >
       {children}
-      <ShoppingCart />
+      <ShoppingCart isOpen={isOpen} />
     </ShoppingCartContext.Provider>
   );
 };
