@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Alocasia 'Dragon Scale'",
     "price": 10.99,
-    "imgUrl": "/imgs/alocasia.jpg"
+    "imgUrl": "/imgs/alocasia_dragon.jpg"
   },
   {
     "id": 2,
@@ -19,8 +19,8 @@
   },
   {
     "id": 4,
-    "name": "Philodendron 'Dean McDowell'",
+    "name": "Philodendron 'Gloriosum'",
     "price": 1400,
-    "imgUrl": "/imgs/ph_dean.jpg"
+    "imgUrl": "/imgs/ph_gloriosum.jpg"
   }
 ]
